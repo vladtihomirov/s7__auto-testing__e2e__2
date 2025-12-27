@@ -58,6 +58,6 @@ export default defineConfig({
   ],
   workers,
   timeout: 30000,
-  retries: 3,
+  retries: 5,
   metadata: { execution_start_time: new Date().getTime() },
 });
