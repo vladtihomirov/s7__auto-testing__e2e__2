@@ -1,0 +1,29 @@
+{
+  "name": "demoqa-playwright-bdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx bddgen && playwright test",
+    "test:headed": "npx bddgen && playwright test --headed",
+    "test:ui": "npx bddgen && playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:cucumber": "cucumber-js",
+    "test:cucumber:headed": "cucumber-js --require-module ts-node/register",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.1",
+    "playwright-bdd": "^8.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
